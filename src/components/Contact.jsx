@@ -42,13 +42,13 @@ const Contact = () => {
             href="https://mail.google.com/mail/?view=cm&fs=1&to=sanidhya1124@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-full text-white font-bold text-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all transform hover:-translate-y-1 relative z-10"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-600 to-emerald-600 rounded-full text-white font-bold text-lg hover:shadow-lg hover:shadow-blue-500/25 transition-all transform hover:-translate-y-1 relative z-10 max-w-full"
           >
-            sanidhya1124@gmail.com
-            <ArrowRight className="w-5 h-5" />
+            <span className="truncate">sanidhya1124@gmail.com</span>
+            <ArrowRight className="w-5 h-5 shrink-0" />
           </a>
 
-          <div className="mt-12 pt-8 border-t border-slate-800 flex justify-center gap-8 relative z-10">
+          <div className="mt-12 pt-8 border-t border-slate-800 flex flex-wrap justify-center gap-8 relative z-10">
             <a href="https://github.com/SunnyXilon" target="_blank" rel="noopener noreferrer" className="text-slate-400 hover:text-white transition-colors flex items-center gap-2">
               <Github className="w-5 h-5" />
               <span>GitHub</span>

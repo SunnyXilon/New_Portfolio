@@ -42,7 +42,7 @@ const Projects = () => {
           <h2 className="text-3xl md:text-5xl font-bold mt-2">Recent Projects</h2>
         </motion.div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}

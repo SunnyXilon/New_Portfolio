@@ -49,7 +49,7 @@ const Hero = () => {
   const inverseBaseRotation = useTransform(baseRotation, (r) => -r);
 
   return (
-    <section id="about" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+    <section id="about" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20 pb-12 md:pb-0">
       {/* Background Elements */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
         <div className="absolute top-20 right-20 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse" />
@@ -61,11 +61,12 @@ const Hero = () => {
           initial={{ opacity: 0, x: -50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
+          className="order-2 md:order-1"
         >
           <div className="inline-block px-4 py-1.5 rounded-full border border-blue-500/30 bg-blue-500/10 text-blue-400 font-medium text-sm mb-6">
             Available for Work
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+          <h1 className="text-4xl md:text-7xl font-bold mb-6 leading-tight">
             Hi, I'm <br />
             <span className="gradient-text">Sanidhya Choudhary</span>
           </h1>
@@ -103,10 +104,10 @@ const Hero = () => {
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative flex items-center justify-center p-24"
+          className="relative flex items-center justify-center py-12 px-4 md:p-24 order-1 md:order-2"
         >
           {/* AI/Tech Visualization */}
-          <div className="relative w-full max-w-sm aspect-square">
+          <div className="relative w-full max-w-[280px] md:max-w-sm aspect-square">
             {/* Spinning Rings */}
             <motion.div
               style={{ rotate: baseRotation }}
@@ -123,9 +124,9 @@ const Hero = () => {
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
                 onClick={handleSpin}
-                className="w-32 h-32 bg-gradient-to-br from-blue-600 to-emerald-600 rounded-full flex items-center justify-center relative z-10 glass cursor-pointer group"
+                className="w-24 h-24 md:w-32 md:h-32 bg-gradient-to-br from-blue-600 to-emerald-600 rounded-full flex items-center justify-center relative z-10 glass cursor-pointer group"
               >
-                <Code2 className="w-16 h-16 text-white group-hover:rotate-12 transition-transform" />
+                <Code2 className="w-12 h-12 md:w-16 md:h-16 text-white group-hover:rotate-12 transition-transform" />
                 <div className="absolute inset-0 rounded-full bg-white/20 animate-ping opacity-0 group-hover:opacity-100" />
               </motion.div>
             </div>
