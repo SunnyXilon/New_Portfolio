@@ -2,14 +2,14 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const skills = [
-  { name: 'React', level: 'Advanced', color: 'bg-blue-500' },
-  { name: 'Python', level: 'Advanced', color: 'bg-yellow-500' },
+  { name: 'React', level: 'Intermediate', color: 'bg-blue-500' },
+  { name: 'Python', level: 'Intermediate', color: 'bg-yellow-500' },
   { name: 'JavaScript', level: 'Intermediate', color: 'bg-blue-600' },
-  { name: 'Tailwind CSS', level: 'Advanced', color: 'bg-cyan-500' },
+  { name: 'Tailwind CSS', level: 'Intermediate', color: 'bg-cyan-500' },
   { name: 'Next.js', level: 'Intermediate', color: 'bg-slate-800 border border-slate-700' },
   { name: 'GIT', level: 'Intermediate', color: 'bg-red-400' },
   { name: 'SQL', level: 'Intermediate', color: 'bg-pink-500' },
-  { name: 'Docker', level: 'Beginner', color: 'bg-blue-600' },
+  { name: 'Plotly & Dash', level: 'Beginner', color: 'bg-blue-600' },
 ];
 
 const TechStack = () => {

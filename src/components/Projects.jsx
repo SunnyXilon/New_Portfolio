@@ -4,10 +4,14 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const projects = [
   {
-    title: 'PIXIE (in progress)',
+    title: 'PIXIE',
     description: 'A AI-powered Photo editor that integrates state-of-the-art AI capabilities.',
     tech: ['React', 'Tailwind', 'Convex', 'Shadcn UI'],
-    color: 'from-blue-500 to-cyan-500'
+    color: 'from-blue-500 to-cyan-500',
+    links:{
+      demo: 'https://pixie-mauve.vercel.app/',
+      github: 'https://github.com/SunnyXilon/picEditor' 
+    }
   },
   {
     title: 'Algorithm-Visualizer',
@@ -20,11 +24,12 @@ const projects = [
     }
   },
   {
-    title: 'Task Management Tool',
-    description: 'Collaborative task manager with drag-and-drop kanban boards and team workspaces.',
-    tech: ['Vue.js', 'Firebase', 'Pinia'],
+    title: 'Lumière (Fronted for now)',
+    description: 'A web application that helps you discover and explore skincare products.',
+    tech: ['React', 'Tailwind'],
     color: 'from-emerald-500 to-green-500',
-    links: { demo: '#', github: '#' }
+    links: { demo: 'https://lumiere-skincare-nu.vercel.app/', 
+      github: 'https://github.com/SunnyXilon/lumiere-skincare' }
   }
 ];
 
